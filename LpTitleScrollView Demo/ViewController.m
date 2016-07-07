@@ -20,7 +20,7 @@
     LpTitleScrollView *scrollView = [[LpTitleScrollView alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 40) TitleArray:@[@"健康", @"游戏", @"娱乐的说", @"哈哈哈", @"小标题好么", @"标题", @"对的呢", @"康忙", @"思密达", @"综艺", @"节目", @"标题"]];
     [self.view addSubview:scrollView];
     scrollView.block =^(NSInteger tag){
-        NSLog(@"%d",tag);
+        NSLog(@"%ld",(long)tag);
     };
     
     // Do any additional setup after loading the view, typically from a nib.
